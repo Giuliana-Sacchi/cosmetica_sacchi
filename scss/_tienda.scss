@@ -1,0 +1,100 @@
+@import "base";
+
+/* Tienda */
+
+/* Dropdown */
+
+.dropdown{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    .dropdown-toggle{
+        font-size: 18px;
+        background-color: #1D4133;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 200;
+        color: white;
+        border: none;
+        &:hover{
+            color: white;
+            background-color: #C2A182;
+        }
+    }
+    .dropdown-menu{
+        font-size: 18px;
+        background-color: #1D4133;
+        border: none;
+        .dropdown-item{
+            font-size: 18px;
+            color: white;
+            font-family: 'Overpass', sans-serif;
+            font-weight: 200;
+            &:hover{
+                background-color: #C2A182;
+                color: white;
+            }
+        }
+    }
+}
+
+/* Contenido de la tienda */
+
+.tienda{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .card-deck{
+        margin-top: 25px;
+        .tarjeta__titulo{
+            font-family: 'Overpass', sans-serif;
+            font-weight: 500;
+            font-size: 25px;
+            color: #1D4133;
+            @media only screen and (min-width: 0px) and (max-width:  1024px){
+                font-size: 23px;
+            }
+        }
+        .precio{
+            font-family: 'Overpass', sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            color: #1D4133;
+        }
+        .tarjeta__texto{
+            margin-top: 25px;
+            font-family: 'Overpass', sans-serif;
+            font-weight: 300;
+            font-size: 17px;
+            color: #1D4133;
+            @media only screen and (min-width: 0px) and (max-width:  1024px){
+                font-size: 16px;
+            }
+        }
+        .boton__tienda--estilo{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            font-size: 17px;
+        }
+        .btn-dark{
+            font-size: 17px;
+            background-color: #1D4133;
+            border: none;
+            text-transform: uppercase;
+            &:hover{
+                background-color:#C2A182;
+                color: #1D4133;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

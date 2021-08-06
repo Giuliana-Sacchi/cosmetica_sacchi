@@ -1,0 +1,78 @@
+@import "base";
+
+/* Información */
+
+.card__contenido{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @media only screen and (min-width:  0px) and (max-width:  1280px){
+        display: none;
+    }
+    .card__titulo{
+        color: #1D4133;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 500;
+        font-size: 27px;
+        text-decoration: underline;
+        text-decoration-color: #1D4133;   
+    }
+    .card__texto{
+        color: #1D4133;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 300;
+        font-size: 19px;
+    }
+    .card__subtitulo{
+        color: #1D4133;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 400;
+        font-size: 19px;
+        margin-top: 18px;
+    }
+}
+
+.card__responsive{
+    @media only screen and (min-width: 1281px){
+        display: none;
+    }
+}
+
+@media only screen and (min-width:  0px) and (max-width:  1280px){
+    .card__responsive{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .card__titulo--responsive{
+            color: #1D4133;
+            font-family: 'Overpass', sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            text-decoration: underline;
+            text-decoration-color: #1D4133;
+            @media only screen and (min-width: 768px) and (max-width:  1280px){
+                font-size: 27px;
+            }
+        }   
+        .card__texto--responsive{
+            color: #1D4133;
+            font-family: 'Overpass', sans-serif;
+            font-weight: 300;
+            font-size: 16px;
+            @media only screen and (min-width: 768px) and (max-width:  1280px){
+                font-size: 19px;
+            }
+        }
+        .card__subtitulo--responsive{
+            color: #1D4133;
+            font-family: 'Overpass', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 18px;
+            @media only screen and (min-width: 768px) and (max-width:  1280px){
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+
+

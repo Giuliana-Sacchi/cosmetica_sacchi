@@ -1,0 +1,74 @@
+@import "base";
+
+/* Contacto */
+
+.form{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3)), url(../assets/img/fondo2.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 25px;
+    margin-bottom: 50px;
+    .form__label{
+        font-family: 'Overpass', sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        color: white;
+        opacity: 90%;
+        margin-top: 13px;
+        @media only screen and (min-width:  0px) and (max-width:  425px){
+            font-size: 20px;
+        }
+    }
+    .form__input{
+        width: 100%;
+        outline: 0px;
+        border: 2px solid #C2A182;
+        padding: 5px;
+        margin-bottom: 13px;
+    }
+    .form__textarea{
+        width: 100%;
+        outline: 0px;
+        border: 2px solid #C2A182;
+        margin-bottom: 13px;
+    }
+    .boton__form{
+        text-align: center;
+        .boton__form--estilo{
+            border: 1px solid #1D4133;
+            font-size: 22px;
+            color: white;
+            background-color: #1D4133;
+            border-radius: none;
+            padding: 5px 25px;       
+            min-width: 200px;
+            display: inline-flex;
+            justify-content: center;
+            transition: 0.3s;
+            @media only screen and (min-width:  0px) and (max-width:  425px){
+                font-size: 18px;
+                padding: 5px 25px;       
+                min-width: 115px;
+            }
+            &:hover{
+                color: #1D4133;
+                background-color: white;
+                border: 1px solid #1D4133;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

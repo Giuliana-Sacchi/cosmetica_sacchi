@@ -1,0 +1,312 @@
+@import "base";
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+}
+
+p{
+	margin-bottom: 0px;
+}
+
+.row{
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.col-lg-12{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+
+/* Barra de navegación */
+
+#navbarNav{
+    justify-content: center;
+    font-size: 27px;
+    list-style-type: none;
+    font-style: normal;
+    font-family: 'Overpass', sans-serif;	
+    font-weight: 200;
+    @media only screen and (min-width:  0px) and (max-width:  425px){
+        font-size: 19px;
+    }
+    @media only screen and (min-width: 426px) and (max-width:  1024px){
+        font-size: 23px;
+    }
+    .navbar-nav .nav-item .nav-link{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #1D4133;
+        transition: 0.3s;
+        &:hover{
+            text-decoration: underline;
+            color: #C2A182;
+        }        
+    
+    }
+
+}
+
+/* Encabezado */
+
+    @each $encabezado in encabezado1, encabezado2, encabezado3, encabezado4, encabezado5 {
+        .#{$encabezado}{
+            background-image: $gradiente, url(../assets/img/#{$encabezado}.jpg);
+            max-width: 100%;
+            background-size: cover;
+            height: 43vw;
+            @media only screen and (min-width:  0px) and (max-width:  1024px){
+                height: 67vw;
+            }
+            .encabezado__imagen--flex{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                margin: auto;
+                position: relative;
+                top: 27%;
+                @media only screen and (min-width:  0px) and (max-width:  767px){
+                    top: 45%;
+                }
+                .encabezado__logo{
+                    @media only screen and (min-width:  0px) and (max-width:  767px){
+                        display: none;
+                    }  
+                }
+                .encabezado__titulo--estilo{
+                    color: white;
+                    opacity: 80%;
+                    font-size: 80px;
+                    text-align: center;
+                    font-family: 'Overpass', sans-serif;
+                    font-weight: 600;
+                    @media only screen and (min-width:  0px) and (max-width:  767px){
+                        font-size: 38px;                          
+                    }
+                    @media only screen and (min-width: 768px) and (max-width:  1024px){
+                        font-size: 65px;
+                    }
+                }
+                .boton{
+                    font-size: 22px;
+                    color: #1D4133;
+                    background-color: white;
+                    border: none;
+                    border-radius: 100px;
+                    padding: 5px 25px;        
+                    margin-top: 10px;
+                    min-width: 200px;
+                    display: inline-flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    transition: 0.3s;
+                    @media only screen and (min-width:  0px) and (max-width:  767px){
+                        font-size: 13px;
+                        padding: 8px 17px;        
+                        margin-top: 3px;
+                        min-width: 120px;
+                    }
+                    @media only screen and (min-width: 768px) and (max-width:  1024px){
+                        font-size: 18px;
+                        padding: 7px 20px;           
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                        min-width: 175px;
+                    }
+                    &:hover{
+                        color: white;
+                        background-color: #1D4133;
+                    }
+                }
+            }
+        }
+    }
+    
+
+/* Títulos y párrafos */
+
+.introduccion{
+    justify-content: center;
+    .introduccion__titulos--fuente{
+        color: #1D4133;
+        font-size: 50px;
+        font-family: 'Overpass', sans-serif;	
+        font-weight: 500;
+        text-align: center;
+        margin-top: 50px;
+        @media only screen and (min-width:  0px) and (max-width:  425px){
+            font-size: 31px;
+        }
+        @media only screen and (min-width: 426px) and (max-width:  1024px){
+            font-size: 42px;
+        }
+    }
+    .introduccion__parrafo--fuente{
+        color: #1D4133;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 100;
+        line-height: 1.3;
+        margin-top: 35px;
+        margin-bottom: 25px;
+        @media only screen and (min-width:  0px) and (max-width:  425px){
+            font-size: 20px;
+        }
+        @media only screen and (min-width: 426px) and (max-width:  1024px){
+            font-size: 25px;
+        }
+    }
+    .introduccion__parrafo--estilo{
+        color: #1D4133;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Overpass', sans-serif;
+        font-weight: 100;
+        line-height: 1.3;
+        margin-top: 15px;
+        @media only screen and (min-width:  0px) and (max-width:  425px){
+            font-size: 19px;
+        }
+        @media only screen and (min-width: 426px) and (max-width:  1024px){
+            font-size: 25px;
+        }
+    }
+}
+
+/* Footer */	
+
+footer{
+    background-color: #1D4133;
+    height: 350px;
+    width: 100%;
+    @media only screen and (min-width:  0px) and (max-width:  767px){
+        max-height: 325px;
+        width: 100%;
+    }
+    @media only screen and (min-width: 767px) and (max-width:  1024px){
+        max-height: 300px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .footer__nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-top: 35px;
+            .footer__lista{
+                text-decoration: none;
+                list-style-type: none;
+                @media only screen and (min-width:  0px) and (max-width:  767px){
+                    margin-top: 50px;
+                    margin-left: 15px;
+                    padding-top: 3px;
+                }
+                .footer__lista--estilo{
+                    font-size: 25px;
+                    color: white;
+                    font-family: 'Overpass', sans-serif;
+                    font-weight: 400;
+                    width: 100%;
+                    transition: 0.1s;
+                    @media only screen and (min-width:  0px) and (max-width:  767px){
+                        font-size: 20px;
+                    }
+                    &:hover{
+                        color: #C3C4BF;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .footer__informacion--estilo{
+            margin-top: 50px;
+            .footer__titulo--estilo{
+                font-size: 22px;
+                color:white;
+                font-family: 'Overpass', sans-serif;
+                font-weight: 600;
+                }
+                .footer__parrafo--estilo{
+                    font-size: 20px;
+                    color: white;
+                    font-family: 'Overpass', sans-serif;
+                    font-weight: 300;
+                    width: 100%;
+                }
+                @media only screen and (min-width:  0px) and (max-width:  767px){
+                    .footer__informacion--estilo{
+                        display: none;
+                    }
+                    .footer__titulo--estilo{
+                        display: none;
+                    }
+                    .footer__parrafo--estilo{
+                        display: none;
+                    }
+                }
+            }   
+        .footer__informacion{
+            margin-top: 50px;
+            @media only screen and (min-width:  0px) and (max-width:  767px){
+                margin-right: 15px;
+                margin-left: 5px;
+                margin-top: 50px;
+                padding-top: 37px;
+            }
+            .footer__parrafo{
+                font-size: 20px;
+                color: white;
+                font-family: 'Overpass', sans-serif;
+                font-weight: 300;
+                width: 100%;
+                @media only screen and (min-width:  0px) and (max-width: 767px){
+                    font-size: 15px;
+                }
+            }
+            .footer__titulo{
+                font-size: 22px;
+                color:white;
+                font-family: 'Overpass', sans-serif;
+                font-weight: 600;
+                @media only screen and (min-width:  0px) and (max-width:  767px){
+                    font-size: 18px;
+                }
+            }
+            .redes__icon{
+                font-size: 45px;
+                margin-right: 10px;
+                margin-bottom: 25px;
+                @media only screen and (min-width:  0px) and (max-width:  767px){
+                    font-size: 34px;
+                }
+                .fab{
+                    color: white;
+                    transition: 0.1s;
+                    transform: scale(1.0);
+                    &:hover{
+                        color: #C3C4BF;
+                        transform: scale(1.1);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
