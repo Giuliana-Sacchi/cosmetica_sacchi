@@ -2,41 +2,6 @@
 
 /* Tienda */
 
-/* Dropdown */
-
-.dropdown{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    .dropdown-toggle{
-        font-size: 18px;
-        background-color: #1D4133;
-        font-family: 'Overpass', sans-serif;
-        font-weight: 200;
-        color: white;
-        border: none;
-        &:hover{
-            color: white;
-            background-color: #C2A182;
-        }
-    }
-    .dropdown-menu{
-        font-size: 18px;
-        background-color: #1D4133;
-        border: none;
-        .dropdown-item{
-            font-size: 18px;
-            color: white;
-            font-family: 'Overpass', sans-serif;
-            font-weight: 200;
-            &:hover{
-                background-color: #C2A182;
-                color: white;
-            }
-        }
-    }
-}
-
 /* Contenido de la tienda */
 
 .tienda{
@@ -44,6 +9,11 @@
     margin-bottom: 50px;
     .card-deck{
         margin-top: 25px;
+        .tarjeta__transformacion{
+            &:hover{
+                border: 1px solid #1D4133;
+            }
+        }
         .tarjeta__titulo{
             font-family: 'Overpass', sans-serif;
             font-weight: 500;
