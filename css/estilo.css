@@ -546,10 +546,14 @@ footer {
         color: white;
         font-family: 'Overpass', sans-serif;
         font-weight: 300;
-        width: 100%; }
+        width: 100%;
+        cursor: pointer; }
         @media only screen and (min-width: 0px) and (max-width: 767px) {
           footer .footer__estilo .footer__informacion .footer__parrafo {
             font-size: 15px; } }
+        footer .footer__estilo .footer__informacion .footer__parrafo:hover {
+          color: #C3C4BF;
+          text-decoration: underline; }
       footer .footer__estilo .footer__informacion .footer__titulo {
         font-size: 22px;
         color: white;

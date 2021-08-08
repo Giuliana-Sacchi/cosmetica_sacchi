@@ -305,8 +305,13 @@ footer{
                 font-family: 'Overpass', sans-serif;
                 font-weight: 300;
                 width: 100%;
+                cursor: pointer;
                 @media only screen and (min-width:  0px) and (max-width: 767px){
                     font-size: 15px;
+                }
+                &:hover{
+                    color: #C3C4BF;
+                    text-decoration: underline;
                 }
             }
             .footer__titulo{

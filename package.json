@@ -8,11 +8,12 @@
     "node-sass --include-path scss scss/main.scss css/estilo.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
 },
-  "author": "",
+  "author": "Giuliana Sacchi",
   "license": "ISC",
-  "description": "",
+  "description": "Emprendimiento de cosmética natural",
   "devDependencies": {
     "node-sass": "^6.0.1",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "bootstrap": "v4.6.x"
   }
 }
