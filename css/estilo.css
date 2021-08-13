@@ -482,12 +482,6 @@ footer {
     @media only screen and (min-width: 426px) and (max-width: 768px) {
       footer .footer__estilo {
         margin-right: 25px; } }
-    footer .footer__estilo .footer__logo {
-      margin-top: 50px;
-      padding-top: 20px; }
-      @media only screen and (min-width: 0px) and (max-width: 768px) {
-        footer .footer__estilo .footer__logo {
-          display: none; } }
     footer .footer__estilo .footer__nav {
       display: flex;
       flex-direction: column;

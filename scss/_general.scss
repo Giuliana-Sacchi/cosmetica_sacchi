@@ -228,13 +228,6 @@ footer{
         @media only screen and (min-width:  426px) and (max-width:  768px){
             margin-right: 25px;
         }
-        .footer__logo{
-            margin-top: 50px;
-            padding-top: 20px;
-            @media only screen and (min-width:  0px) and (max-width:  768px){
-                display: none;
-            }
-        }
         .footer__nav{
             display: flex;
             flex-direction: column;
